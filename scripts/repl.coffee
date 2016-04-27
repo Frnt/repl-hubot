@@ -59,7 +59,7 @@ class ReplEngine
       botId: REPL_BOT_ID
       voiceText: input
       initTalkingFlag: input == 'init'
-      initTopicId: REPL_TOPIC_ID
+      initTopicId: input == 'init' ? REPL_TOPIC_ID : undefined
       appRecvTime: @now()
       appSendTime: @now()
     options =
